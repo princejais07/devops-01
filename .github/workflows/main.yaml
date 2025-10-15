@@ -51,7 +51,8 @@ jobs:
                   key: ${{ secrets.EC2_SSH_KEY }}
                   script_stop: true
                   script: |
-                      cd /home/${{ secrets.EC2_USER }}/backend 
+                      cd /home/${{ secrets.EC2_USER }}/backend
+                      
                       sudo apt update -y
                       sudo apt install -y python3-venv python3-pip
 
